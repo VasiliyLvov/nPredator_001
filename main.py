@@ -15,7 +15,7 @@ dp = Dispatcher()
 @dp.message(Command(commands=['start']))
 @dp.message(Command(commands=['старт']))
 async def start(message: types.Message):
-    await message.answer(f'Привет, {message.from_user.full_name}!\n'
+    await message.answer(f'Привет, друг {message.from_user.full_name}!\n'
                          f'Примените команду /info для получения более подробной информации')
 
 @dp.message(Command(commands=['stop']))
