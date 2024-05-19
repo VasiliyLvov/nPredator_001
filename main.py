@@ -1,10 +1,7 @@
 import asyncio
 import config
-from aiogram import Bot, Dispatcher, types, F
-# from aiogram.filters.command import Command
+from aiogram import Bot, Dispatcher
 import logging
-# import random
-# from keyboards import keyboard_001, keyboard_empty
 import subrcs, career
 
 async def main():
