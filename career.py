@@ -50,4 +50,4 @@ async def grade(message: types.Message, state: FSMContext):
 @router.message(Choice.grade)
 async def grade_incorrectly(message: types.Message):
     await message.answer('Неправильно. Попробуйте ещё раз',
-                         reply_markup=keyboards.ake_keyboard(available_grades))
+                         reply_markup=keyboards.make_keyboard(available_grades))

@@ -14,11 +14,12 @@ def make_main_kb():
     button_010 = types.KeyboardButton(text='Пользователь')
     button_011 = types.KeyboardButton(text='/career')
     button_012 = types.KeyboardButton(text='Карьера')
+    button_013 = types.KeyboardButton(text='Лиса')
 
     keyboard_001 = [
     [button_001, button_002, button_003],
     [button_004, button_005, button_006],
-    [button_007, button_008, button_009, button_010],
+    [button_007, button_008, button_009, button_010, button_013],
     [button_011, button_012]
     ]
 
