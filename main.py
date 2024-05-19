@@ -5,7 +5,7 @@ from aiogram import Bot, Dispatcher, types, F
 import logging
 # import random
 # from keyboards import keyboard_001, keyboard_empty
-import subrcs
+import subrcs, career
 
 async def main():
 
@@ -16,8 +16,8 @@ async def main():
     bot = Bot(token=config.token)
     dp = Dispatcher()
 
+    dp.include_router(career.router)
     dp.include_router(subrcs.router)
-#    dp.include_router(msgs.router)
 
     await dp.start_polling(bot)
 
